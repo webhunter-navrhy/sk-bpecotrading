@@ -3,30 +3,25 @@
  "zdroj_url": "https://www.bpecotrading.sk/",
  "firma": "BP EcoTrading, s.r.o.",
  "obor": [
-  "stavebnictví a řemesla",
-  "právo a poradenství"
+  "energetika – fotovoltické systémy (FV elektrárne, batérie, hybridný ohrev vody)"
  ],
- "ico": "",
+ "ico": "47526238",
  "ares": null,
  "kontakty": {
   "emaily": [
    "dopyt@bpecotrading.sk"
   ],
   "telefony": [
-   "948 143 444"
+   "0948 143 444"
   ],
-  "adresa": "",
+  "adresa": "Radlinského 2231/20, 052 01 Spišská Nová Ves (v hlavičke starého webu 2230/20)",
   "socialni_site": [
    "https://www.facebook.com/FotovoltikaBPEcoTrading/"
   ]
  },
  "logo": {
-  "soubor": "podklady/logo.png",
-  "zdroj": "https://www.bpecotrading.sk/wp-content/uploads/2019/02/logo-high-600x348.png",
-  "rozmery": [
-   600,
-   348
-  ]
+  "soubor": "static/logo.svg",
+  "zdroj": "https://www.bpecotrading.sk/wp-content/uploads/2019/02/logo-vector-2.svg"
  },
  "barvy": {
   "css_promenne": {},
@@ -46,9 +41,9 @@
   ],
   "theme_color": null,
   "doporucene": [
-   "#ff2010",
    "#1f5da6",
-   "#aac435"
+   "#27509b",
+   "#aac335"
   ]
  },
  "fotky": [
@@ -263,9 +258,51 @@
   }
  ],
  "chybi": [
-  "IČO",
-  "adresa / provozovna",
-  "potvrzení služeb a ceníku (nic nevymýšlet)"
+  "potvrdiť aktuálne podmienky a sumy dotácie Zelená domácnostiam pre rok 2026 (na starom webe je stav 2024 a banner „až 4 025 €“, ten v návrhu nie je)",
+  "správne číslo domu: Radlinského 2231/20 alebo 2230/20 (starý web uvádza oboje)",
+  "realizácie po roku 2023 a fotky z montáže / tímu",
+  "aktuálny sortiment (modely panelov na starom webe sú z roku 2019)",
+  "či preniesť blog (posledné články 2019–2020)"
  ],
- "popis_webu": "Špecializujeme sa na podporu využívania obnoviteľných zdrojov energie prostredníctvom inštalácie fotovoltických systémov."
+ "popis_webu": "Špecializujeme sa na podporu využívania obnoviteľných zdrojov energie prostredníctvom inštalácie fotovoltických systémov.",
+ "mesto": "Spišská Nová Ves",
+ "fotky_klienta": "101 fotiek realizácií z https://www.bpecotrading.sk/referencie/ (img/ref/r000–r100), mapovanie v _data/realizacie.json",
+ "fakta_doplnene": [
+  {
+   "text": "101 realizácií (83 rodinné domy, 18 firemný sektor), 2014–2023, obec + kWp + rok",
+   "zdroj": "https://www.bpecotrading.sk/referencie/"
+  },
+  {
+   "text": "Najväčšia realizácia Spišská Nová Ves 311,85 kWp (2023)",
+   "zdroj": "https://www.bpecotrading.sk/referencie/"
+  },
+  {
+   "text": "IBC SOLAR Preferred Premium Partner 2025",
+   "zdroj": "https://www.bpecotrading.sk/o-nas/ (certifikát)"
+  },
+  {
+   "text": "Osvedčenie MHSR FV a slnečné tepelné systémy č. 2024/B/018 do 17. 1. 2029; tepelné čerpadlá č. 2023/D/025 do 7. 2. 2028 (Ján Palkovič)",
+   "zdroj": "https://www.bpecotrading.sk/o-nas/ (skeny, dátum narodenia nepoužitý)"
+  },
+  {
+   "text": "Oprávnený zhotoviteľ Zelená domácnostiam / Zelená solidarita, podmienky dotácie",
+   "zdroj": "https://www.bpecotrading.sk/dotacie/"
+  },
+  {
+   "text": "Produkty: IBC panely, Fronius/SMA meniče, LG Chem/BYD/Fronius batérie, LOGITEX, IBC montážne systémy",
+   "zdroj": "https://www.bpecotrading.sk/produkty/"
+  },
+  {
+   "text": "6 recenzií (Mariana, Ján, Mária, Michal, Marek, Otto) – doslovne",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "text": "IČO 47526238, DIČ 2023924320, IČ DPH SK2023924320, OR Košice I, Sro 34254/V, konatelia Mgr. Michal Bartoš, Ján Palkovič",
+   "zdroj": "https://www.bpecotrading.sk/kontakt/"
+  }
+ ],
+ "texty_na_kontrolu": [
+  "popisy 4 krokov (Obhliadka, Návrh riešenia, Projekt, Realizácia) – názvy sú ich, vety dopísané",
+  "úvodný odstavec hero a texty dlaždíc domy/firmy"
+ ]
 }
