@@ -1,0 +1,41 @@
+{% extends "_base.html" %}
+{% set titulek = 'Realizácie fotovoltiky – Spiš, Poprad, Levoča, Košice | BP EcoTrading' %}
+{% set popis = 'Fotografie a výkon fotovoltických systémov, ktoré BP EcoTrading postavila pre rodinné domy a firmy na Spiši a vo východnom Slovensku.' %}
+{% set cesta = 'realizacie/' %}
+{% set R = data.realizacie %}
+{% set roky = R|map(attribute='rok')|unique|sort(reverse=true)|list %}
+{% block obsah %}
+<section class="sekce podstranka-hlava">
+  <div class="wrap">
+    <p class="nadpis-maly"><a href="{{ url('') }}">Úvod</a> / Realizácie</p>
+    <h1>Realizácie</h1>
+    <p class="hero-p">{{ R|length }} fotovoltických systémov z&nbsp;rokov {{ roky|last }}–{{ roky|first }}, od malých striech rodinných domov po elektráreň s&nbsp;výkonom 311,85&nbsp;kWp. Polohu všetkých obcí nájdete na <a href="{{ url('') }}#realizacie">mape na úvodnej stránke</a>.</p>
+    <div class="filtre" role="group" aria-label="Filter realizácií">
+      <button type="button" class="cip-btn" data-filter="vsetko" aria-pressed="true">Všetko</button>
+      <button type="button" class="cip-btn" data-filter="rodinne" aria-pressed="false">Rodinné domy</button>
+      <button type="button" class="cip-btn" data-filter="firemny" aria-pressed="false">Firmy</button>
+    </div>
+  </div>
+</section>
+<section class="sekce galeria-sekcia">
+  <div class="wrap">
+    {% for rok in roky %}
+    <div class="rok-blok" data-rok="{{ rok }}">
+      <h2 class="rok-h">{{ rok }}</h2>
+      <ul class="galeria" role="list">
+        {% for r in R if r.rok == rok %}
+        <li data-sektor="{{ r.sektor }}"><button type="button" class="foto-btn" data-velka="{{ img_url(r.foto, 1920) }}" data-popis="{{ r.obec }} · {{ r.kwp_txt }} kWp · {{ r.rok }}">{{ img(r.foto, 'Fotovoltický systém ' ~ r.obec ~ ', ' ~ r.kwp_txt ~ ' kWp, ' ~ r.rok, sizes='(min-width: 64rem) 23vw, (min-width: 40rem) 31vw, 50vw') }}</button>
+          <p class="stitok-text"><b>{{ r.obec }}</b> {{ r.kwp_txt }} kWp{% if r.sektor == 'firemny' %} · firma{% endif %}</p></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section class="sekce dopyt-pas">
+  <div class="wrap dopyt-pas-in">
+    <h2>Chcete takú strechu aj vy?</h2>
+    <a class="tlacidlo tlacidlo-lime" href="{{ url('') }}#dopyt">Poslať nezáväzný dopyt</a>
+  </div>
+</section>
+{% endblock %}

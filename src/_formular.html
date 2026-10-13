@@ -1,0 +1,34 @@
+{# Dopyt. Endpoint a demo režim z _data/site.json (formular.endpoint, formular.demo). #}
+<form class="formular" method="post" enctype="multipart/form-data" {% if site.formular.endpoint and not site.formular.demo %}action="{{ site.formular.endpoint }}"{% endif %} data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}">
+  <fieldset class="volby">
+    <legend>Pre aký objekt?</legend>
+    {% for t in ['Rodinný dom', 'Bytový dom', 'Firma / prevádzka', 'Poľnohospodársky objekt', 'Iné'] %}
+    <label class="cip"><input type="radio" name="objekt" value="{{ t }}"{% if loop.first %} checked{% endif %}><span>{{ t }}</span></label>
+    {% endfor %}
+  </fieldset>
+  <div class="riadok">
+    <label>Obec <input name="obec" autocomplete="address-level2" placeholder="napr. Smižany"></label>
+    <label>Strecha
+      <select name="strecha"><option>Šikmá</option><option>Plochá</option><option>Neviem</option></select>
+    </label>
+  </div>
+  <label>Ročná spotreba elektriny (kWh, ak ju poznáte) <input name="spotreba" inputmode="numeric" placeholder="napr. 4 500"></label>
+  <fieldset class="volby">
+    <legend>Zaujíma ma aj</legend>
+    {% for t in ['Batéria (akumulácia)', 'Hybridný ohrev vody', 'Dotácia Zelená domácnostiam'] %}
+    <label class="cip"><input type="checkbox" name="zaujem" value="{{ t }}"><span>{{ t }}</span></label>
+    {% endfor %}
+  </fieldset>
+  <div class="riadok">
+    <label>Meno a priezvisko <input name="meno" autocomplete="name" required></label>
+    <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
+  </div>
+  <label>Telefón <input name="telefon" type="tel" autocomplete="tel"></label>
+  <label>Správa <textarea name="sprava" rows="4" placeholder="Čokoľvek, čo máme vedieť vopred"></textarea></label>
+  <div class="subor"><span class="subor-nadpis">Faktúra za elektrinu alebo fotka strechy (nepovinné)</span><label class="subor-btn"><input type="file" name="priloha" accept="image/*,.pdf"><span class="cip-btn">Priložiť súbor</span><span class="subor-meno">Nevybrali ste žiadny súbor</span></label></div>
+  <div class="past" aria-hidden="true"><label>Nevypĺňať <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+  <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+  <p class="gdpr">Odoslaním súhlasíte so spracovaním osobných údajov na účel vybavenia dopytu.</p>
+  <button type="submit" class="tlacidlo tlacidlo-lime">Odoslať dopyt</button>
+  <p class="formular-stav" role="status" aria-live="polite"></p>
+</form>

@@ -1,0 +1,49 @@
+{
+  "slug": "sk-bpecotrading",
+  "nazev": "BP EcoTrading, s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-bpecotrading/",
+  "base": "/sk-bpecotrading/",
+  "lang": "sk",
+  "popis": "Fotovoltické systémy pre rodinné domy a firmy – Spišská Nová Ves, Poprad, Levoča, Kežmarok. Návrh, projekt, dotácia Zelená domácnostiam, montáž a servis.",
+  "navrh": true,
+  "domena": "bpecotrading.sk",
+  "og_image": "ref/r089.jpg",
+  "logo": "logo.svg",
+  "theme_color": "#1f5da6",
+  "typ": "HomeAndConstructionBusiness",
+  "ico": "47526238",
+  "dic": "2023924320",
+  "ic_dph": "SK2023924320",
+  "register": "Spoločnosť zapísaná v obchodnom registri Okresného súdu Košice I, oddiel Sro, vložka číslo 34254/V",
+  "kontakt": {
+    "email": "dopyt@bpecotrading.sk",
+    "telefon": "0948 143 444",
+    "adresa": {
+      "ulice": "Radlinského 2231/20",
+      "psc": "052 01",
+      "mesto": "Spišská Nová Ves",
+      "zeme": "SK"
+    }
+  },
+  "konatelia": [
+    {"meno": "Mgr. Michal Bartoš", "email": "bartos@bpecotrading.sk", "telefon": "0905 228 493"},
+    {"meno": "Ján Palkovič", "email": "palkovic@bpecotrading.sk", "telefon": "0917 752 011"}
+  ],
+  "oteviraci_doba": [],
+  "sameas": ["https://www.facebook.com/FotovoltikaBPEcoTrading/"],
+  "facebook": "https://www.facebook.com/FotovoltikaBPEcoTrading/",
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu bpecotrading.sk"
+  },
+  "nav": [
+    {"text": "Pre domácnosti", "href": "#pre-koho"},
+    {"text": "Pre firmy", "href": "#pre-firmy"},
+    {"text": "Realizácie", "href": "realizacie"},
+    {"text": "Dotácie", "href": "dotacie"},
+    {"text": "O nás", "href": "#o-nas"},
+    {"text": "Kontakt", "href": "#kontakt"}
+  ]
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ titulek or site.nazev }}</title>
+<meta name="description" content="{{ popis or site.popis }}">
+{% if site.navrh or noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<meta name="theme-color" content="{{ site.theme_color }}">
+<link rel="canonical" href="{{ site.url }}{{ cesta or '' }}">
+<link rel="icon" href="{{ base }}logo.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sk_SK">
+<meta property="og:title" content="{{ titulek or site.nazev }}">
+<meta property="og:description" content="{{ popis or site.popis }}">
+<meta property="og:url" content="{{ site.url }}{{ cesta or '' }}">
+{% if og_url %}<meta property="og:image" content="{{ og_url }}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">{% endif %}
+<link rel="preload" href="{{ base }}fonts/unbounded-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% block head %}{% endblock %}
+{% if jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endif %}
+</head>
+<body class="{% block telo %}{% endblock %}">
+<a class="skip" href="#obsah">Preskočiť na obsah</a>
+<header class="hlavicka">
+  <div class="wrap hlavicka-in">
+    <a href="{{ url('') }}" class="logo" aria-label="{{ site.nazev }} – úvod"><img src="{{ base }}{{ site.logo }}" alt="BP EcoTrading" width="96" height="56"></a>
+    <nav class="menu" id="menu" aria-label="Hlavná navigácia">
+      {% for n in site.nav %}<a href="{% if n.href.startswith('#') %}{{ '' if not cesta else url('') }}{{ n.href }}{% else %}{{ url(n.href) }}{% endif %}"{% if cesta and n.href == cesta.strip('/') %} aria-current="page"{% endif %}>{{ n.text }}</a>{% endfor %}
+      <a class="menu-tel" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a>
+    </nav>
+    <a class="tlacidlo tlacidlo-male" href="{{ '' if not cesta else url('') }}#dopyt">Nezáväzný dopyt</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><span class="sr">Menu</span></button>
+  </div>
+</header>
+<main id="obsah">
+{% block obsah %}{% endblock %}
+</main>
+<footer class="paticka">
+  <div class="wrap paticka-in">
+    <div class="paticka-firma">
+      <img src="{{ base }}{{ site.logo }}" alt="BP EcoTrading" width="110" height="64" loading="lazy">
+      <p>Podporujeme využívanie obnoviteľných zdrojov energie inštaláciou fotovoltických systémov.</p>
+    </div>
+    <div>
+      <h2 class="paticka-h">Kde nás nájdete</h2>
+      <p>{{ site.nazev }}<br>{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p>
+      <p><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a><br><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+    </div>
+    <div>
+      <h2 class="paticka-h">Stránky</h2>
+      <p><a href="{{ url('') }}">Úvod</a><br><a href="{{ url('realizacie') }}">Realizácie</a><br><a href="{{ url('dotacie') }}">Dotácie</a><br><a href="{{ url('') }}#kontakt">Kontakt</a><br><a href="{{ site.facebook }}" rel="noopener">Facebook</a></p>
+    </div>
+    <div>
+      <h2 class="paticka-h">Fakturačné údaje</h2>
+      <p>IČO: {{ site.ico }}<br>DIČ: {{ site.dic }}<br>IČ DPH: {{ site.ic_dph }}</p>
+      <p class="paticka-mala">{{ site.register }}.</p>
+    </div>
+  </div>
+  <div class="wrap paticka-spodok">
+    <p>© {{ site.nazev }}</p>
+    <p>Návrh webu: WebHunter</p>
+  </div>
+</footer>
+<dialog class="lightbox" aria-label="Fotografia realizácie"><form method="dialog"><button class="lightbox-zavriet" aria-label="Zavrieť">×</button></form><img alt=""><p></p></dialog>
+<script src="{{ asset('js/main.js') }}" defer></script>
+{% block skripty %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,271 @@
+{
+ "slug": "sk-bpecotrading",
+ "zdroj_url": "https://www.bpecotrading.sk/",
+ "firma": "BP EcoTrading, s.r.o.",
+ "obor": [
+  "stavebnictví a řemesla",
+  "právo a poradenství"
+ ],
+ "ico": "",
+ "ares": null,
+ "kontakty": {
+  "emaily": [
+   "dopyt@bpecotrading.sk"
+  ],
+  "telefony": [
+   "948 143 444"
+  ],
+  "adresa": "",
+  "socialni_site": [
+   "https://www.facebook.com/FotovoltikaBPEcoTrading/"
+  ]
+ },
+ "logo": {
+  "soubor": "podklady/logo.png",
+  "zdroj": "https://www.bpecotrading.sk/wp-content/uploads/2019/02/logo-high-600x348.png",
+  "rozmery": [
+   600,
+   348
+  ]
+ },
+ "barvy": {
+  "css_promenne": {},
+  "z_css": [
+   "#1f5da6",
+   "#aac435",
+   "#dc3232",
+   "#00acad",
+   "#ffb900",
+   "#6faed8"
+  ],
+  "z_loga": [
+   "#ff2010",
+   "#1f5da6",
+   "#aac435",
+   "#853850"
+  ],
+  "theme_color": null,
+  "doporucene": [
+   "#ff2010",
+   "#1f5da6",
+   "#aac435"
+  ]
+ },
+ "fotky": [
+  {
+   "soubor": "podklady/foto/foto-01.png",
+   "url": "https://www.bpecotrading.sk/wp-content/uploads/2019/02/hands-euro-600x575.png",
+   "sirka": 600,
+   "vyska": 575,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-02.png",
+   "url": "https://www.bpecotrading.sk/wp-content/uploads/2019/03/testsimonials-maria.png",
+   "sirka": 500,
+   "vyska": 500,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-03.png",
+   "url": "https://www.bpecotrading.sk/wp-content/uploads/2019/03/testsimonials-jan.png",
+   "sirka": 500,
+   "vyska": 500,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-04.png",
+   "url": "https://www.bpecotrading.sk/wp-content/uploads/2019/03/testsimonials-michal.png",
+   "sirka": 500,
+   "vyska": 500,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-05.png",
+   "url": "https://www.bpecotrading.sk/wp-content/uploads/2019/03/testsimonials-marek.png",
+   "sirka": 500,
+   "vyska": 500,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-06.png",
+   "url": "https://www.bpecotrading.sk/wp-content/uploads/2019/03/testsimonials-otto.png",
+   "sirka": 500,
+   "vyska": 500,
+   "alt": ""
+  }
+ ],
+ "fakta": [
+  {
+   "typ": "h1",
+   "text": "Fotovoltické systémy",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Máte záujem?",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Už 10 rokov s vami",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Prečo si vybrať nás",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Ponuka pre vás",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Rodinné domy",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Firemný sektor",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Šetríme vaše peniaze, chránime životné prostredie",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Výkon",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Prémiová kvalita",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Dlhoročná záruka",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Využite dotáciu na fotovoltiku",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "1. Obhliadka",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "2. Návrh riešenia",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "3. Projekt",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "4. Realizácia",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h3",
+   "text": "Pomôžeme vám so získaním dotácie.",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Partneri",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Nechali sme prehovoriť našich zákazníkov…",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Kde nás nájdete",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "h2",
+   "text": "Navigácia",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Fotovoltické systémy Spišská Nová Ves, Poprad, Levoča, Kežmarok",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Vyplňte krátky formulár a nechajte riešenie na nás!",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Poskytujeme kvalitu, odbornosť a komplexnosť služieb. Skúsení pracovníci, sofistikované technológie a pro-klientske myslenie sú základnými piliermi pri našich úspešných realizáciách.",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "S prácami od firmy BP EcoTrading, s.r.o. som nanajvýš spokojná. Práce, tak prípravné, projektové a realizačné boli vykonané profesionálne a v dohodnutom termíne.",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Komunikácia zo zástupcami firmy bola úžasná. Poradili, čo sme nevedeli, tak trpezlivo vysvetlili.",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Som veľmi, naozaj veľmi spokojná. Ohrev vody prostredníctvom fotovoltaických panelov nám úžasne funguje… Ďakujem.",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Pri rekonštrukcii domu sme sa rozhodli, že si dáme namontovať aj fotovoltické panely s hybridným ohrievačom vody. Oslovili sme spoločnosť BP EcoTrading, s.r.o., kde už po prvom stretnutí sme vedeli, že sme sa rozhodli správne. Zrozumiteľne nám bol vysvetlený technický návrh, ktorý zodpovedal našim predstavám, aj potrebám. Realizácia a montáž bola vykonaná v termíne na akom sme sa dohodli, ako bonus nám boli poskytnuté aj služby inžinierskej činnosti. S prácou spoločnosti sme veľmi spokojní.",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Pri riešení nášho fotovoltického systému sme boli s touto firmou veľmi spokojní. Sú profesionáli, vedeli poradiť, trpezlivo vysvetliť, kvalitne a včas systém zrealizovať. Odporúčam i iným zákazníkom.",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "So spoločnosťou BP EcoTrading, s.r.o. sme boli maximálne spokojní. Od prvého telefonátu, cez osobné stretnutie až po ukončenie a odovzdanie diela. Riešili sme ho cez projekt Zelená domácnostiam a získali sme štátnu dotáciu. Profesionálny prístup, komunikácia na maximálnej úrovni. Po skončení prác a odovzdaní diela bola naďalej komunikácia na vynikajúcej úrovni, v prípade potreby nebol problém so stretnutím ešte v ten deň alebo nasledujúci. Oceňujem profesionalitu a pevne verím, že v budúcnosti ešte vyhľadám ich služby",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Celkovo som bol spokojný s Vaším prístupom i vybavením všetkých papierovačiek! Montáž v podstate tiež, keďže to stále funguje bez závad. Čo mi s odstupom času chýba, je poskytnutie alternatívy pri výbere bojlera na TÚV, určite by som šiel do objemovo väčšej varianty. Inak som zatiaľ maximálne spokojný!",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Podporujeme využívanie obnoviteľných zdrojov energie inštaláciou fotovoltických systémov.",
+   "zdroj": "https://www.bpecotrading.sk/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "BP EcoTrading, s.r.o. Radlinského 2231/20 052 01 Spišská Nová Ves",
+   "zdroj": "https://www.bpecotrading.sk/"
+  }
+ ],
+ "chybi": [
+  "IČO",
+  "adresa / provozovna",
+  "potvrzení služeb a ceníku (nic nevymýšlet)"
+ ],
+ "popis_webu": "Špecializujeme sa na podporu využívania obnoviteľných zdrojov energie prostredníctvom inštalácie fotovoltických systémov."
+}

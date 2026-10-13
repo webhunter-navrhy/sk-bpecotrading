@@ -1,0 +1,133 @@
+{
+ "fakty": [
+  {
+   "titul": "IBC SOLAR Preferred Premium Partner 2025",
+   "text": "status udelený spoločnosťou IBC SOLAR AG"
+  },
+  {
+   "titul": "Oprávnený zhotoviteľ",
+   "text": "v projektoch Zelená domácnostiam a Zelená solidarita"
+  },
+  {
+   "titul": "Realizácie od roku 2014",
+   "text": "od Vysokých Tatier po Košice"
+  }
+ ],
+ "kroky": [
+  {
+   "nazov": "Obhliadka",
+   "text": "Pozrieme sa na strechu, rozvádzač a na to, koľko elektriny v dome alebo vo firme miniete."
+  },
+  {
+   "nazov": "Návrh riešenia",
+   "text": "Navrhneme výkon, panely, menič a podľa potreby batériu alebo hybridný ohrev vody. Zrozumiteľne vysvetlíme, prečo práve takto."
+  },
+  {
+   "nazov": "Projekt",
+   "text": "Pripravíme projekt a vybavíme papierovačky vrátane inžinierskej činnosti, pripojenia k distribučnej sústave a poukážky na dotáciu."
+  },
+  {
+   "nazov": "Realizácia",
+   "text": "Namontujeme a zapojíme systém v dohodnutom termíne a odovzdáme ho. Potom sa staráme o záručný aj pozáručný servis."
+  }
+ ],
+ "sluzby": [
+  "Fotovoltické systémy",
+  "Inžinierska činnosť",
+  "Elektrotechnické práce",
+  "Záručný a pozáručný servis"
+ ],
+ "retaz": [
+  {
+   "nazov": "Panely",
+   "znacky": "IBC SOLAR",
+   "detail": "monokryštalické a polykryštalické panely IBC MonoSol, IBC PolySol",
+   "ikona": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M8 34 14 12h26l-6 22Z\"/><path d=\"M11 23h26M21 12l-3 22M31 12l-3 22\"/><path d=\"M24 34v7M17 41h14\"/></svg>"
+  },
+  {
+   "nazov": "Meniče napätia",
+   "znacky": "Fronius, SMA",
+   "detail": "Fronius Galvo, Primo, Symo, Symo Hybrid · SMA Sunny Boy, Sunny Tripower, Sunny Island",
+   "ikona": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><rect x=\"10\" y=\"8\" width=\"28\" height=\"32\" rx=\"4\"/><path d=\"M17 20c2-4 5-4 7 0s5 4 7 0M17 30h14\"/></svg>"
+  },
+  {
+   "nazov": "Akumulátory",
+   "znacky": "LG Chem, BYD, Fronius",
+   "detail": "hybridné úložné riešenia SMA + BYD a Fronius",
+   "ikona": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><rect x=\"12\" y=\"10\" width=\"24\" height=\"32\" rx=\"4\"/><path d=\"M20 6h8M18 32h12M18 25h12M18 18h12\"/></svg>"
+  },
+  {
+   "nazov": "Vo vašom dome",
+   "znacky": "LOGITEX",
+   "detail": "hybridné ohrievače vody (stacionárne aj závesné) a hybridná klimatizácia",
+   "ikona": "<svg viewBox=\"0 0 48 48\" aria-hidden=\"true\"><path d=\"M8 22 24 9l16 13v18H8Z\"/><path d=\"M20 40V29h8v11\"/></svg>"
+  }
+ ],
+ "montaz": "Montážne systémy IBC TopFix 200, TopFix 200 Delta-support, ConSole a AeroFix – na šikmé aj ploché strechy.",
+ "osvedcenia": [
+  {
+   "nazov": "Osvedčenie pre inštalatérov fotovoltických a slnečných tepelných systémov",
+   "detail": "Ministerstvo hospodárstva SR, č. 2024/B/018, platnosť do 17. 1. 2029 (Ján Palkovič)"
+  },
+  {
+   "nazov": "Osvedčenie pre inštalatérov tepelných čerpadiel",
+   "detail": "Ministerstvo hospodárstva SR, č. 2023/D/025, platnosť do 7. 2. 2028 (Ján Palkovič)"
+  },
+  {
+   "nazov": "Certifikáty LOGITEX a PV Manager",
+   "detail": "a osvedčenie o absolvovaní vzdelávacieho programu ÚCV"
+  }
+ ],
+ "partneri": [
+  {
+   "subor": "partneri/ibc-solar.png",
+   "nazov": "IBC SOLAR"
+  },
+  {
+   "subor": "partneri/fronius.png",
+   "nazov": "Fronius"
+  },
+  {
+   "subor": "partneri/sma.png",
+   "nazov": "SMA"
+  },
+  {
+   "subor": "partneri/logitex.png",
+   "nazov": "LOGITEX"
+  },
+  {
+   "subor": "partneri/energy-home.png",
+   "nazov": "Energy Home"
+  },
+  {
+   "subor": "partneri/alphareality.png",
+   "nazov": "Alpha reality"
+  }
+ ],
+ "recenzie": [
+  {
+   "meno": "Mária",
+   "text": "Pri riešení nášho fotovoltického systému sme boli s touto firmou veľmi spokojní. Sú profesionáli, vedeli poradiť, trpezlivo vysvetliť, kvalitne a včas systém zrealizovať. Odporúčam i iným zákazníkom."
+  },
+  {
+   "meno": "Ján",
+   "text": "Pri rekonštrukcii domu sme sa rozhodli, že si dáme namontovať aj fotovoltické panely s hybridným ohrievačom vody. Oslovili sme spoločnosť BP EcoTrading, s.r.o., kde už po prvom stretnutí sme vedeli, že sme sa rozhodli správne. Zrozumiteľne nám bol vysvetlený technický návrh, ktorý zodpovedal našim predstavám, aj potrebám. Realizácia a montáž bola vykonaná v termíne na akom sme sa dohodli, ako bonus nám boli poskytnuté aj služby inžinierskej činnosti. S prácou spoločnosti sme veľmi spokojní."
+  },
+  {
+   "meno": "Otto",
+   "text": "Všetko na jednotku."
+  },
+  {
+   "meno": "Michal",
+   "text": "So spoločnosťou BP EcoTrading, s.r.o. sme boli maximálne spokojní. Od prvého telefonátu, cez osobné stretnutie až po ukončenie a odovzdanie diela. Riešili sme ho cez projekt Zelená domácnostiam a získali sme štátnu dotáciu. Profesionálny prístup, komunikácia na maximálnej úrovni. Po skončení prác a odovzdaní diela bola naďalej komunikácia na vynikajúcej úrovni, v prípade potreby nebol problém so stretnutím ešte v ten deň alebo nasledujúci. Oceňujem profesionalitu a pevne verím, že v budúcnosti ešte vyhľadám ich služby"
+  },
+  {
+   "meno": "Mariana",
+   "text": "S prácami od firmy BP EcoTrading, s.r.o. som nanajvýš spokojná. Práce, tak prípravné, projektové a realizačné boli vykonané profesionálne a v dohodnutom termíne. Komunikácia zo zástupcami firmy bola úžasná. Poradili, čo sme nevedeli, tak trpezlivo vysvetlili. Som veľmi, naozaj veľmi spokojná. Ohrev vody prostredníctvom fotovoltaických panelov nám úžasne funguje… Ďakujem."
+  },
+  {
+   "meno": "Marek",
+   "text": "Celkovo som bol spokojný s Vaším prístupom i vybavením všetkých papierovačiek! Montáž v podstate tiež, keďže to stále funguje bez závad. Čo mi s odstupom času chýba, je poskytnutie alternatívy pri výbere bojlera na TÚV, určite by som šiel do objemovo väčšej varianty. Inak som zatiaľ maximálne spokojný!"
+  }
+ ]
+}

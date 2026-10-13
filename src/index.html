@@ -1,0 +1,209 @@
+{% extends "_base.html" %}
+{% set titulek = 'Fotovoltika Spišská Nová Ves, Poprad, Levoča | BP EcoTrading' %}
+{% set cesta = '' %}
+{% set R = data.realizacie %}
+{% set O = data.obsah %}
+{% set domy = R|selectattr('sektor', 'equalto', 'rodinne')|list %}
+{% set firmy = R|selectattr('sektor', 'equalto', 'firemny')|list %}
+{% set obce = R|map(attribute='obec')|unique|list %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="nadpis-maly">Fotovoltické systémy · Spišská Nová Ves, Poprad, Levoča, Kežmarok</p>
+      <h1>Nekonečná energia, úspora pre váš dom</h1>
+      <p class="hero-p">Navrhneme, vybavíme a&nbsp;namontujeme fotovoltiku pre rodinné domy aj firmy na Spiši. Od obhliadky cez projekt a&nbsp;dotáciu Zelená domácnostiam až po servis.</p>
+      <div class="akcie">
+        <a class="tlacidlo" href="#dopyt">Poslať nezáväzný dopyt</a>
+        <a class="odkaz-sipka" href="#realizacie">Pozrieť {{ R|length }} realizácií na mape</a>
+      </div>
+    </div>
+    <figure class="hero-foto">
+      {{ img('ref/r089.jpg', 'Fotovoltické panely na streche v Poprade, v pozadí Vysoké Tatry', sizes='(min-width: 64rem) 58vw, 100vw') }}
+      <figcaption class="stitok"><b>Poprad</b> 9,99 kWp · 2022</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <ul class="fakty" role="list">
+      {% for f in O.fakty %}<li><strong>{{ f.titul }}</strong><span>{{ f.text }}</span></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce pre-koho" id="pre-koho" aria-labelledby="pre-koho-h">
+  <div class="wrap">
+    <h2 id="pre-koho-h" class="sr">Pre koho staviame</h2>
+    <div class="dlazdice">
+      <article class="dlazdica">
+        <figure>{{ img('ref/r019.jpg', 'Zrub v Levoči s fotovoltickými panelmi na streche', sizes='(min-width: 64rem) 46vw, 100vw') }}
+          <figcaption class="stitok"><b>Levoča</b> 3,65 kWp · 2021</figcaption></figure>
+        <div class="dlazdica-text">
+          <p class="nadpis-maly">Rodinné a bytové domy</p>
+          <h3>Elektrina z vlastnej strechy</h3>
+          <p>Systém navrhneme podľa vašej spotreby, s&nbsp;batériou alebo hybridným ohrevom vody. Pomôžeme s&nbsp;poukážkou zo Zelenej domácnostiam a&nbsp;vybavíme papierovačky.</p>
+          <a class="odkaz-sipka" href="#dopyt" data-objekt="Rodinný dom">Dopyt pre rodinný dom</a>
+        </div>
+      </article>
+      <article class="dlazdica" id="pre-firmy">
+        <figure>{{ img('ref/r083.jpg', 'Letecký pohľad na halu v Spišskej Novej Vsi s fotovoltickou elektrárňou na streche', sizes='(min-width: 64rem) 46vw, 100vw') }}
+          <figcaption class="stitok"><b>Spišská Nová Ves</b> 311,85 kWp · 2023</figcaption></figure>
+        <div class="dlazdica-text">
+          <p class="nadpis-maly">Firemný sektor</p>
+          <h3>Nižšie prevádzkové náklady</h3>
+          <p>Školy, nemocnice, administratívne budovy, hotely, priemyselné a&nbsp;poľnohospodárske objekty. Od menších striech po elektráreň s&nbsp;výkonom 311,85&nbsp;kWp na hale v&nbsp;Spišskej Novej Vsi.</p>
+          <a class="odkaz-sipka" href="#dopyt" data-objekt="Firma / prevádzka">Dopyt pre firmu</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sekce mapa-sekcia" id="realizacie" aria-labelledby="mapa-h">
+  <div class="wrap">
+    <div class="sekcia-hlava">
+      <h2 id="mapa-h">Naše strechy od Tatier po Košice</h2>
+      <p>Na webe máme zverejnených {{ R|length }} realizácií z&nbsp;rokov {{ R|map(attribute='rok')|min }}–{{ R|map(attribute='rok')|max }}: {{ domy|length }} rodinných domov a&nbsp;{{ firmy|length }} firiem v&nbsp;{{ obce|length }} obciach. Vyberte obec a&nbsp;pozrite si fotky.</p>
+    </div>
+    <div class="filtre" role="group" aria-label="Filter realizácií">
+      <button type="button" class="cip-btn" data-filter="vsetko" aria-pressed="true">Všetko <span>{{ R|length }}</span></button>
+      <button type="button" class="cip-btn" data-filter="rodinne" aria-pressed="false">Rodinné domy <span>{{ domy|length }}</span></button>
+      <button type="button" class="cip-btn" data-filter="firemny" aria-pressed="false">Firmy <span>{{ firmy|length }}</span></button>
+    </div>
+    <div class="mapa-grid">
+      <div class="mapa-ram">
+        {% include "_mapa.svg" %}
+        <p class="mapa-pozn mapa-mobil">Na mobile ukazujeme okolie Spiša. Košice, Vranov nad Topľou, Stará Ľubovňa a ďalšie obce nájdete v zozname pod mapou.</p>
+        <p class="mapa-pozn">Mimo výrezu: {% for r in R if not r.na_mape %}{{ r.obec }} ({{ r.kwp_txt }} kWp, {{ r.rok }}){% endfor %}. Mapa: okresy © geoBoundaries, polohy obcí © OpenStreetMap.</p>
+      </div>
+      <aside class="panel" aria-live="polite">
+        <div class="panel-in" id="panel"></div>
+      </aside>
+    </div>
+    <div class="obce-zoznam" role="group" aria-label="Obce">
+    </div>
+    <p class="sekcia-dalej"><a class="odkaz-sipka" href="{{ url('realizacie') }}">Všetky realizácie s fotkami</a></p>
+  </div>
+</section>
+
+<section class="sekce postup" aria-labelledby="postup-h">
+  <div class="wrap postup-in">
+    <figure class="postup-foto">
+      {{ img('ref/r086.jpg', 'Letecký pohľad na fotovoltickú elektráreň na streche v Spišskom Štvrtku', sizes='(min-width: 62rem) 40vw, 100vw') }}
+      <figcaption class="stitok"><b>Spišský Štvrtok</b> 62,30 kWp · 2022</figcaption>
+    </figure>
+    <div>
+      <h2 id="postup-h">Od obhliadky po zapojenie</h2>
+      <p class="postup-uvod">Štyri kroky, ktoré s&nbsp;vami prejdeme. Celé to vybavíme my, vrátane dotácie.</p>
+      <ol class="kroky" role="list">
+        {% for k in O.kroky %}<li><span class="krok-bod" aria-hidden="true">{{ loop.index }}</span><div><h3>{{ k.nazov }}</h3><p>{{ k.text }}</p></div></li>{% endfor %}
+      </ol>
+      <ul class="sluzby" role="list">
+        {% for s in O.sluzby %}<li>{{ s }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekce dotacia" id="dotacia" aria-labelledby="dotacia-h">
+  <div class="wrap dotacia-in">
+    <div>
+      <figure class="dotacia-foto">{{ img('ref/r046.jpg', 'Rodinný dom v Spišskej Novej Vsi s fotovoltickými panelmi na streche', sizes='(min-width: 62rem) 40vw, 100vw') }}
+        <figcaption class="stitok"><b>Spišská Nová Ves</b> 3,41 kWp · 2019</figcaption></figure>
+      <p class="nadpis-maly">Zelená domácnostiam a&nbsp;Zelená solidarita</p>
+      <h2 id="dotacia-h">Pomôžeme vám so získaním dotácie</h2>
+      <p>Rodinné a&nbsp;bytové domy sa môžu uchádzať o&nbsp;poukážku na inštaláciu fotovoltiky z&nbsp;národných projektov Slovenskej inovačnej a&nbsp;energetickej agentúry (SIEA). BP EcoTrading je zapísaná v&nbsp;zozname oprávnených zhotoviteľov, takže žiadosť aj realizáciu vybavíme spolu.</p>
+      <a class="odkaz-sipka" href="{{ url('dotacie') }}">Podmienky dotácie</a>
+    </div>
+    <div class="dotacia-karta"><dl>
+      <div><dt>50&nbsp;%</dt><dd>oprávnených výdavkov môže pokryť poukážka zo Zelenej domácnostiam</dd></div>
+      <div><dt>90&nbsp;%</dt><dd>v&nbsp;projekte Zelená solidarita pre nízkopríjmové domácnosti</dd></div>
+      <div><dt>10,8&nbsp;kW</dt><dd>najvyšší výkon podporovaného fotovoltického zariadenia</dd></div>
+    </dl>
+      <p class="zdroj">Zdroj: SIEA, zelenadomacnostiam.sk. Aktuálne podmienky vám overíme pri obhliadke.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sekce retaz-sekcia" id="produkty" aria-labelledby="retaz-h">
+  <div class="wrap">
+    <div class="sekcia-hlava">
+      <h2 id="retaz-h">Z čoho staviame</h2>
+      <p>Cesta elektriny od slnka až do vašej zásuvky. Pracujeme so značkami, ktorých sme partnermi.</p>
+    </div>
+    <ol class="retaz" role="list">
+      <li class="retaz-slnko" aria-hidden="true"><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="11"/><g>{% for a in range(0, 360, 45) %}<line x1="30" y1="6" x2="30" y2="13" transform="rotate({{ a }} 30 30)"/>{% endfor %}</g></svg></li>
+      {% for c in O.retaz %}<li><span class="retaz-ikona">{{ c.ikona|safe }}</span><h3>{{ c.nazov }}</h3><p class="znacky">{{ c.znacky }}</p><p>{{ c.detail }}</p></li>{% endfor %}
+    </ol>
+    <p class="montaz">{{ O.montaz }}</p>
+  </div>
+</section>
+
+<section class="sekce o-nas" id="o-nas" aria-labelledby="onas-h">
+  <div class="wrap o-nas-in">
+    <div class="o-nas-text">
+      <h2 id="onas-h">Spoľahlivé a&nbsp;overené riešenia</h2>
+      <p>Ponuka našich produktov a&nbsp;služieb je určená pre rodinné a&nbsp;bytové domy, školy, nemocnice, administratívne budovy, hotely, priemyselné a&nbsp;poľnohospodárske objekty. Dlhodobým cieľom spoločnosti je vytváranie a&nbsp;udržiavanie spoľahlivých obchodných vzťahov.</p>
+      <p>Ponúkame spoľahlivé a&nbsp;overené riešenia, ktoré napĺňajú požiadavky klientov. Výsledkom sú fotovoltické systémy, ktoré znižujú prevádzkové náklady a&nbsp;šetria klientom peniaze.</p>
+      <h3 class="o-nas-h3">Oprávnenia a&nbsp;certifikáty</h3>
+      <ul class="osvedcenia" role="list">
+        {% for o in O.osvedcenia %}<li><strong>{{ o.nazov }}</strong><span>{{ o.detail }}</span></li>{% endfor %}
+      </ul>
+    </div>
+    <figure class="certifikat">
+      {{ img('cert-ibc-2025.jpg', 'Certifikát IBC SOLAR Preferred Premium Partner 2025 pre BP EcoTrading, s.r.o.', sizes='(min-width: 64rem) 30vw, 80vw') }}
+      <figcaption>IBC SOLAR Preferred Premium Partner 2025</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <ul class="partneri" role="list" aria-label="Partneri">
+      {% for p in O.partneri %}<li>{{ img(p.subor, p.nazov, sizes='140px') }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce recenzie" aria-labelledby="recenzie-h">
+  <div class="wrap recenzie-in">
+    <div class="recenzie-bok">
+      <h2 id="recenzie-h">Nechali sme prehovoriť zákazníkov</h2>
+      <p>Hodnotenia zákazníkov zverejnené na našom doterajšom webe.</p>
+      <figure class="recenzie-foto">{{ img('ref/r001.jpg', 'Fotovoltické panely na plochej streche rodinného domu vo Svite', sizes='(min-width: 62rem) 34vw, 100vw') }}
+        <figcaption class="stitok"><b>Svit</b> 9,99 kWp · 2022</figcaption></figure>
+    </div>
+    <div class="recenzie-zoznam">
+      {% for r in O.recenzie[:3] %}<blockquote class="recenzia"><p>{{ r.text }}</p><footer>{{ r.meno }}</footer></blockquote>{% endfor %}
+      <details class="recenzie-dalsie">
+        <summary class="cip-btn">Ďalšie recenzie ({{ O.recenzie|length - 3 }})</summary>
+        {% for r in O.recenzie[3:] %}<blockquote class="recenzia"><p>{{ r.text }}</p><footer>{{ r.meno }}</footer></blockquote>{% endfor %}
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="sekce dopyt" id="dopyt" aria-labelledby="dopyt-h">
+  <div class="wrap dopyt-in">
+    <div class="dopyt-text" id="kontakt">
+      <h2 id="dopyt-h">Pošlite nám dopyt</h2>
+      <p>Napíšte, o&nbsp;aký objekt ide a&nbsp;kde sa nachádza. Ozveme sa a&nbsp;dohodneme si obhliadku. Ak priložíte faktúru za elektrinu alebo fotku strechy, návrh pripravíme rýchlejšie.</p>
+      <div class="kontakt-bloky">
+        <div>
+          <h3>Kancelária</h3>
+          <p>{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p>
+          <p><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a><br><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+          <p><a class="odkaz-sipka" href="https://www.google.com/maps/search/?api=1&amp;query=Radlinsk%C3%A9ho%202231%2F20%2C%20Spi%C5%A1sk%C3%A1%20Nov%C3%A1%20Ves" rel="noopener">Zobraziť na mape</a></p>
+        </div>
+        {% for k in site.konatelia %}<div>
+          <h3>{{ k.meno }}</h3>
+          <p>konateľ<br><a href="mailto:{{ k.email }}">{{ k.email }}</a><br><a href="tel:{{ k.telefon|replace(' ', '') }}">{{ k.telefon }}</a></p>
+        </div>{% endfor %}
+      </div>
+    </div>
+    <div class="dopyt-forma">
+      {% include "_formular.html" %}
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block skripty %}
+<script type="application/json" id="realizacie-data">[{% for r in R %}{"id":{{ r.id }},"o":{{ r.obec|tojson }},"k":{{ r.kwp_txt|tojson }},"kw":{{ r.kwp }},"r":{{ r.rok }},"s":"{{ r.sektor }}","x":{{ r.x if r.na_mape else 'null' }},"y":{{ r.y if r.na_mape else 'null' }},"t":"{{ img_url(r.foto, 640) }}","f":"{{ img_url(r.foto, 1280) }}"}{% if not loop.last %},{% endif %}{% endfor %}]</script>
+<script src="{{ asset('js/mapa.js') }}" defer></script>
+{% endblock %}

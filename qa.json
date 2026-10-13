@@ -1,0 +1,66 @@
+{
+  "url": "http://localhost:8791/sk-bpecotrading/",
+  "ok": true,
+  "chyby": [],
+  "varovani": [
+    "Největší obrázek (mobil) 440 kB > 400 kB: http://localhost:8791/sk-bpecotrading/img/ref-r001-1280.webp",
+    "Web má noindex (u ostrého webu pravděpodobně chyba)"
+  ],
+  "metriky": {
+    "sirky": {
+      "1440": {
+        "scrollWidth": 1440,
+        "pocet_pretekajicich": 0
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "pocet_pretekajicich": 0
+      },
+      "1024": {
+        "scrollWidth": 1024,
+        "pocet_pretekajicich": 0
+      },
+      "820": {
+        "scrollWidth": 820,
+        "pocet_pretekajicich": 0
+      },
+      "390": {
+        "scrollWidth": 390,
+        "pocet_pretekajicich": 0
+      },
+      "360": {
+        "scrollWidth": 360,
+        "pocet_pretekajicich": 0
+      }
+    },
+    "preneseno_PC_MB": 1.78,
+    "nejvetsi_obrazek_PC": {
+      "kB": 329,
+      "url": "http://localhost:8791/sk-bpecotrading/img/ref-r019-1280.webp"
+    },
+    "snimku_PC": 11,
+    "preneseno_mobil_MB": 2.47,
+    "nejvetsi_obrazek_mobil": {
+      "kB": 441,
+      "url": "http://localhost:8791/sk-bpecotrading/img/ref-r001-1280.webp"
+    },
+    "snimku_mobil": 17,
+    "seo": {
+      "title": "Fotovoltika Spišská Nová Ves, Poprad, Levoča | BP EcoTrading",
+      "description": "Fotovoltické systémy pre rodinné domy a firmy – Spišská Nová Ves, Poprad, Levoča, Kežmarok. Návrh, p",
+      "lang": "sk",
+      "h1": 1,
+      "jsonld": [
+        true
+      ],
+      "robots": "noindex, nofollow",
+      "og_image": "https://webhunter-navrhy.github.io/sk-bpecotrading/og.jpg",
+      "bez_v": [],
+      "canonical": true,
+      "viewport": true
+    },
+    "maly_dotykovy_cil": 0,
+    "font_nadpis": "Unbounded",
+    "font_text": "Onest"
+  }
+}

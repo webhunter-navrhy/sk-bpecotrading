@@ -1,0 +1,16 @@
+{
+  "znamka": 8,
+  "slabiny": [
+    "Mapa realizácií (PC buňka 4, mobil 3–4) je hlavní nápad webu, ale vypadá jako malý widget. Mapa zabírá asi 60 % šířky v rámečku, body obcí jsou drobné a postranní panel s legendou ji tlačí do strany. Oprava: na PC dát mapu přes celou šířku kontejneru s výškou aspoň 600 px a zvětšit body i popisky měst (Spišská Nová Ves, Poprad, Levoča, Košice). Panel „Všetky realizácie“ s fotkami položit přes mapu vpravo dole, aby tahle sekce byla nejsilnějším momentem stránky.",
+    "Sekce „Spoľahlivé a overené riešenia / Oprávnenia a certifikáty“ (PC buňky 8–9, mobil 10–12) je nejslabší místo webu. Dva skoro stejné korporátní odstavce („Ponuka našich produktov…“, „Ponúkame spoľahlivé a overené riešenia…“) tvoří na mobilu zeď textu. Sken certifikátu IBC s obřím „2025“ je oříznutý a na mobilu zabírá skoro celou obrazovku. Logo Alpha reality je bledé a loga partnerů mají různou optickou velikost. Oprava: text zkrátit na 2 věty, certifikát dát jako malý náhled (do 240 px) vedle seznamu osvědčení s proklikem na zvětšení a loga partnerů srovnat na stejnou výšku v jedné řadě.",
+    "Formulář dopytu na mobilu (buňky 15–17): QA hlásí 8 dotykových cílů pod 40 px (inputy 37 px, výběrové čipy) a pole pro přílohu je nativní anglické „Choose File / No file chosen“ na slovenském webu. Oprava: inputům a čipům dát min-height 44 px a pole pro soubor nahradit vlastním tlačítkem „Priložiť faktúru alebo fotku strechy“ s názvem vybraného souboru ve slovenštině."
+  ],
+  "silne": [
+    "Koncept „Mapa striech Spiša“ stojí na skutečných datech klienta (101 realizací, obce, kWp a roky). Štítek „obec · kWp · rok“ u každé fotky ho nese celým webem.",
+    "Brand drží: logo bp ecotrading vlevo, modrá #1f5da6 a limetková z loga, tmavý blok jen u dopytu. Žádný vypůjčený luxusní ani tmavý vzhled.",
+    "Fotky jsou výhradně vlastní realizace z regionu (Tatry v pozadí, letecké záběry hal) a sedí k oboru i místu.",
+    "Obsah je převzatý z jejich webu: recenze s křestními jmény, osvědčení s čísly, podmínky dotace se zdrojem SIEA. Číslované kroky 1–4 jsou jejich skutečný postup.",
+    "Řetěz „Z čoho staviame“ (slunce → panely → měniče → baterie → dům) je srozumitelný a oborově konkrétní. Konverzi pomáhá jasné CTA v hlavičce, dva vstupy pro domácnosti a firmy a podrobný formulář."
+  ],
+  "verdikt": "odeslat – web má jeden silný koncept na reálných datech, respektuje brand a používá vlastní fotky klienta. Před odesláním stojí za to zvětšit mapu, zkrátit sekci certifikátů a opravit dotykové cíle a pole pro přílohu ve formuláři na mobilu."
+}
